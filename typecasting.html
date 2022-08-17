@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Basic Type Casting</title>
+    <script type="text/javascript">
+       
+        document.write("<br/>" + Number("3.14787868")); // returns 3.14
+        document.write("<br/>" + Number(" ")); // returns 0
+        document.write("<br/>" + Number("")); // returns 0
+        document.write("<br/>" + Number("99 88")); // returns NaN
+
+
+        // The global method String() can convert numbers to strings.
+        let num = 111;
+        let s = String(100 + 23);
+        document.write("<br/>" + String(num));
+        document.write("<br/>" + String(123));
+        document.write("<br/>" + String(s + 100 + 23));
+        document.write("<br/>" + String("100" + "23") + String("100" + "23"));
+        // The Number method toString() does the same it converts numbers to strings.
+        document.write("<br/>" + num.toString());
+        document.write("<br/>" + String(num + num.toString()));
+        // parseInt()
+        document.write("<br/>" + parseInt("-10"));
+        document.write("<br/>" + parseInt("-10.33"));
+        document.write("<br/>" + parseInt("10"));
+        document.write("<br/>" + parseInt("10.33"));
+        document.write("<br/>" + parseInt("10 20 30"));
+        document.write("<br/>" + parseInt("years is:10"));
+
+        // parseFloat()
+        document.write("<br/>" + parseFloat("-10"));
+        document.write("<br/>" + parseFloat("-10.33"));
+        document.write("<br/>" + parseFloat("10"));
+        document.write("<br/>" + parseFloat("10.33"));
+        document.write("<br/>" + parseFloat("10 20 30"));
+        document.write("<br/>" + parseFloat("10 years"));
+        document.write("<br/>hello can not be convert to a number:" + parseInt("hello"));
+    </script>
+</head>
+
+<body>
+</body>
+
+</html>
